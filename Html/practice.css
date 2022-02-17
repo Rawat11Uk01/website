@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+.navbar{
+   position: fixed;
+
+    color: white;
+    opacity: 0.85;
+    z-index: 999;
+   width: 100%;
+}
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+.btn{
+    display: inline-block;
+    padding: 1em 2.5em;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.btn-primary{
+    color: #fff;
+    background: #16a083;
+}
+
+
+.nav-container{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 78px;
+    
+}
+.nav-container .nav-heading{
+font-size: 3rem;
+color: black;
+margin-left: 1em;
+color: white;
+}
+.nav-container .menu-items{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+.nav-container .menu-item{
+    list-style: none;
+    margin: 0 3rem ;
+    font-size: 1.8rem;
+ 
+}
+.nav-container a{
+    text-decoration: none;
+    color: white;
+}
+.nav-container a:hover{
+    color: aqua;
+}
+
+.header{
+background: url('/home/alind/test1/images/img/header-bg.png');
+width: 100%;
+height: 100vh;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.header-content{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.6rem;
+    color: white;
+}
+.header-content .heading-1{
+    padding: 3rem;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    
+}
+.header-content .heading-1 h3{
+font-size: 3rem;
+}
+.header-content .heading-2{
+    margin-top: 3rem;
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+.header-content .heading-1 h3::after{
+    content: "";
+    display: block;
+    border-bottom: 5px solid red;
+    width: 100%;
+    margin-top: 1rem;
+    
+}
+.header-content a:hover{
+    background: #FF6347
+}
+
+/* #####up#### */
+
+
+.upcoming-events{
+    padding: 3rem 0;
+}
+.upcoming-events-heading{
+    text-align: center;
+    font-size: 3rem;
+    color: #555;
+}
+.upcoming-events-heading::after{
+    content: "";
+    display: block;
+    
+    width: 10%;
+    margin-top: 1rem;
+    text-align: center;
+}
+.event-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+.event-image{
+    width: 50%;
+    margin: 2rem;
+}
+.event-image img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: right;
+    
+
+}
+
+
+.event-text p{
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.event-text{
+    text-align: center;
+    padding: 1rem;
+}
+.event-text a{
+    padding: 2rem;
+}
+.event-image h1{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* #####explore### */
+
+.explore{
+    padding: 2rem 0;
+    background: url("/home/alind/test1/images/img/bg2.png");
+    width: 100vw;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.explore-container{
+    
+    display: flex;
+    flex-direction: column;
+   height: 100%;
+   justify-content: center;
+}
+.explore-heading h1{
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 5rem;
+}
+.para{
+    
+    width: 70%;
+   text-align: center;
+}
+.para p{
+
+    color: white;
+    margin-bottom: 1rem;
+}
+.para a{
+
+}
