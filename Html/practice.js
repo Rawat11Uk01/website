@@ -1217,3 +1217,137 @@
 // obj['gender']= 'male';
 // console.log(obj)
 // console.log(Obj)
+
+
+// const numbers = new Set();
+// numbers.add(1);
+// console.log(numbers)
+// function personInfo(){
+//     console.log(`person name is ${this.firstname} and person id is ${this.id}`);
+// }
+
+// const person1={
+//     id: 1,
+//     firstname: 'kashish',
+//     about: personInfo
+//     }
+//     const person2={
+//         id: 2,
+//         firstname: 'fd',
+//         about: personInfo,
+//         }
+    
+//         const person3={
+//             id: 3,
+//             firstname: '23',
+//             about: personInfo
+//             }
+//             person1.about();
+        
+
+// function about(){
+//     console.log(`${this.firstName},${this.age}`)
+// }
+// const user1 = {
+//     firstName: 'kasish',
+//     age: 21,
+   
+// }
+
+// const user2 = {
+//     firstName: 'rawat',
+//     age: 32,
+   
+// }
+// about.call(user2)
+
+
+// const userMethods ={
+//     about : function(){
+//         console.log(`${this.firstName},${this.lastName}`);
+//     },
+//     is18 : function(){
+//         return this.age>=18;
+//     }
+// }
+// function createUser(firstName, lastName, email,age,address){
+//     const user = Object.create(createUser.prototype);
+//     user.firstName = firstName;
+//     user.lastName = lastName;
+//     user.email = email;
+//     user.age = age;
+//     user.address = address;
+    
+
+   
+// return user;
+// };
+// createUser.prototype.about = function(){
+//     return(`${this.firstName},${this.lastName}`);
+// }
+// createUser.prototype.is18 = function(){
+//           return this.age>=18;
+// }
+// const user1 =createUser('kashish','rawat',"@gmail.com",19,"masi");
+// console.log(user1.about())
+
+
+
+// function createUser(firstName,age){
+//     this.firstName= firstName;
+//     this.age = age;
+// }
+// createUser.prototype.about = function(){
+//     return(`${this.firstName}`)
+// }
+// const user1 = new createUser('kashish', 19);
+
+// console.log(user1.about())
+
+// let numbers = [1,2,3,4,5];
+// Object.getPrototypeOf(numbers);
+// console.log(numbers)
+
+
+// class createUser{
+//     constructor(firstName,lastName,age,email,address){
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.email = email;
+//         this.age = age;
+//         this.address = address;
+//     }
+//     about(){
+//            return(`${this.firstName},${this.lastName}`);
+//     }
+// }
+// const user1 = new createUser('kashish', 'rawat','@gmail.com',21,'masi');
+// console.log(Object.getPrototypeOf(user1));
+
+
+class Animal{
+    constructor(name,age){
+        this.name= name,
+        this.age= age;
+    }
+    eat(){
+        console.log(`${this.name} is eating`)
+    }
+    isSupercute(){
+        return this.age <= 1;
+    }
+    isCute(){
+        return true;
+    }
+};
+class Dog extends Animal{
+constructor(name,age,speed){
+    super(name,age);
+    this.speed = speed;
+}
+fun(){
+    return(`stupid dog is running at ${ this.speed} miles per hours`)
+}
+}
+const dog1= new Dog('rambo',8,45);
+console.log(dog1.fun())
