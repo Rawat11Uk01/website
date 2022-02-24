@@ -1029,9 +1029,153 @@
 // })
 
 
-const url = "https://jsonplaceholder.typicode.com/posts";
-fetch(url).then((response)=>{
-return response.json()
-}).then(data=>{
-    console.log(data)
-})
+// const url = "https://jsonplaceholder.typicode.com/posts";
+// fetch(url).then((response)=>{
+// return response.json()
+// }).then(data=>{
+//     console.log(data)
+// })
+
+
+// const year = 2020;
+// if(year%4===0){
+//     if(year%100===0){
+//         if(year%400===0){
+//             console.log('given year is a leap year');
+//         }else{
+//             console.log('given year is not a leap year');
+//         }
+//     }else{
+//         console.log('given year is a leap year');
+//     }
+// }else{
+//     console.log('given year is not a leap year');
+// }
+
+
+// var num=0;
+// do{
+//     num++;
+    
+// }while(num<10);
+// console.log(num)
+
+
+
+// const arr = [2,3,56,42,56,575,2,25,7,4];
+// const newarr = arr.map((a,b,c)=>{
+// return a/2;
+// })
+// console.log(newarr)
+
+
+// let arr = [
+//     ['zone-1', 'zone-2'],
+//     ['zone-3', 'zone-4'],['zone-5',' zone-6'],['zone-7', 'zone-8']
+// ];
+// let newArr = arr.reduce((a,b)=>{
+// return a.concat(b);
+// })
+// console.log(newArr)
+
+// let a = 'asddd';
+// console.log(a.search('d'))
+
+// let a = "         'one','two','three','two'";
+// console.log(a.trim())
+
+// const currentDate = new Date();
+// const nDate = currentDate.setMonth(2);
+// console.log(nDate);
+
+
+// console.log( Math.max(12,3,4,6,7,8,6,4,34,4))
+
+// const bioData = {
+//     name: 'kashish',
+//     surname: 'rawat',
+//     'age': 23,
+//     gender: 'male',
+//     newName: {
+//         name: "ok"
+//     },
+//     'person hobbies':
+//     'fighting'
+// }
+// console.log(Object.keys(bioData));
+// for(let key of Object.keys(bioData)){
+//     console.log(bioData[key])
+// }
+// console.log(bioData['person hobbies'])
+
+// const person = {
+//     name: 'rawat',
+//     age : 23,
+//     hobbies: ['one','two','three']
+// };
+// for(let key in person){
+//     console.log(`${key}:${person[key]}`)
+// }
+
+// const myObj = new Object;
+// myObj['key1']= 'value1';
+// myObj['key2']='value2';
+// console.log(myObj)
+
+// const obj1 = {
+//     name1: 'kashish',
+//     surname1: 'rawat',
+//     age1: 12,
+// }
+// const obj2 = {
+//     name: 'negi',
+//     surname: 'negi',
+//     age: 102,
+// }
+// const newObj ={...obj1 , ...obj2};
+// console.log(newObj)
+
+// const band = {
+//     bandName: 'led',
+//     "famous song": 'love'
+// }
+
+// let{bandName:var1,"famous song":var2 }= band;
+// console.log(var1)
+
+// const arr = [
+//     {name:'kashish', surname:'rawat', age:12},
+//     {name:'kartik', surname:'bisht', age:22},
+//     {name:'lucky', surname:'negi', age:32},
+// ];
+// let[{name}, , {surname}]=arr;
+// console.log(surname)
+
+
+// function fun(a,b,...c){
+//     return(a+b+c);
+// }
+// const fun1 = fun(1,2,[1,2,35,2,6,3,4]);
+// console.log(fun1)
+
+
+// function one(){
+//     console.log('why');
+// };
+// function two(a){
+//     console.log(a);
+//     one();
+// }
+// two(one);
+
+// const number = [1,34,32,56,22];
+
+// number.forEach((element,index)=>{
+//     console.log(`${element},${index}`);
+// });
+
+// const number = [2,4,6,4,2,5];
+// function square(element){
+//     console.log(element*element)
+// }
+// number.(square);
