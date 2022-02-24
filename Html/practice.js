@@ -1179,3 +1179,41 @@
 //     console.log(element*element)
 // }
 // number.(square);
+
+
+// const userCart = [
+//     {productId:1, ProductName: "mobile", price:2000},
+//     {productId:2, ProductName: "tv", price:4000},
+//     {productId:3, ProductName: "headPhone", price:6000},
+// ];
+// const total = userCart.reduce((current,element)=>{
+//     reduce account += element.price;
+// },0)
+// console.log(total)
+
+// const numbers = [5,9,200,400,3000,54];
+// const what =numbers.fill(0,2,5);
+
+
+// const person = new Map();
+// person.set('firstName', "rawat");
+// person.set('age', 21);
+// person.set('gender', "male");
+// person.set(1, "whatt");
+// person.set(15, 32);
+// person.set('ass', "dsa");
+
+// for(let [p,v] of person){
+//     console.log(p,v)
+// }
+
+
+// const obj = {
+//     name: 'rawat',
+//     age: 12,
+// };
+// const Obj = Object.assign({},obj)
+// console.log(obj)
+// obj['gender']= 'male';
+// console.log(obj)
+// console.log(Obj)
