@@ -1325,29 +1325,167 @@
 // console.log(Object.getPrototypeOf(user1));
 
 
-class Animal{
-    constructor(name,age){
-        this.name= name,
-        this.age= age;
-    }
-    eat(){
-        console.log(`${this.name} is eating`)
-    }
-    isSupercute(){
-        return this.age <= 1;
-    }
-    isCute(){
-        return true;
-    }
-};
-class Dog extends Animal{
-constructor(name,age,speed){
-    super(name,age);
-    this.speed = speed;
-}
-fun(){
-    return(`stupid dog is running at ${ this.speed} miles per hours`)
-}
-}
-const dog1= new Dog('rambo',8,45);
-console.log(dog1.fun())
+// class Animal{
+//     constructor(name,age){
+//         this.name= name,
+//         this.age= age;
+//     }
+//     eat(){
+//         console.log(`${this.name} is eating`)
+//     }
+//     isSupercute(){
+//         return this.age <= 1;
+//     }
+//     isCute(){
+//         return true;
+//     }
+// };
+// class Dog extends Animal{
+// constructor(name,age,speed){
+//     super(name,age);
+//     this.speed = speed;
+// }
+// fun(){
+//     return(`stupid dog is running at ${ this.speed} miles per hours`)
+// }
+// }
+// const dog1= new Dog('rambo',8,45);
+// console.log(dog1.fun())
+// const mainheading = document.querySelector('div.headline h2')
+// console.log(mainheading);
+// mainheading.style.color = 'black'
+
+// const link = document.querySelector('a');
+// console.log(link.getAttribute('href').slice(1));
+// link.setAttribute('href', 'https://google.com')
+// console.log(link.getAttribute('href'));
+
+// const navItem = document.getElementsByTagName("a");
+// for(let i=0;i<navItem.length; i++){
+//     console.log(navItem[i])
+//     const navItems = navItem[i];
+//     navItems.style.color = 'black';
+//     navItems.style.backgroundColor = 'white';
+// }
+
+// const headline = document.querySelector('.headline');
+// console.log(headline.innerHTML)
+// headline.innerHTML = "<h1> Inner Html has changes</h1>"
+// headline.innerHTML += "<button class=\" btn\">click more</botton>"
+// console.log(headline.innerHTML)
+
+
+
+// const rootNode = document.getRootNode();
+// const htmlElementNode =rootNode.childNodes[0];
+// console.log(htmlElementNode.childNodes);
+// const headElement = htmlElementNode.childNodes[0];
+// console.log(headElement.childNodes);
+
+// const heading = document.querySelector('h1');
+
+// const parentElem = heading.parentNode;
+// console.log(parentElem);
+// parentElem.style.backgroundColor = 'black'
+
+// const todoList = document.querySelector('.todo-list ');
+// console.log(todoList.innerHTML)
+// todoList.innerHTML += "<li>New todo</li>"
+
+// const newTodoItem = document.createElement('li');
+// newTodoItem.textContent = 'teach me';
+// const todoList = document.querySelector('.todo-list ');
+// todoList.append(newTodoItem);
+
+// console.log(newTodoItem);
+// const ul = document.querySelector('.todo-list ');
+// const li = document.createElement('li');
+// li.textContent = "kahi na kahi";
+// ul.append(li);
+
+
+// const btn = document.querySelector(".btn-headline");
+// function btnClick(){
+//     console.log('hiii')
+// }
+// btn.addEventListener('click',(()=>{
+//     console.log('hiii')
+// }));
+
+// const allButtons = document.querySelectorAll("button");
+// for(let button of allButtons){
+//     button.addEventListener('click',function(){
+//         console.log(this.textContent)
+//      });
+// }
+// allButtons.forEach(function(button){
+//     button.addEventListener('click',function(){
+//         console.log(this.textContent)
+//      });
+// });
+// function ram(){
+//     console.log("HEY RAM");
+// }
+// setTimeout(ram,1000)
+
+
+
+
+
+// const id = setTimeout(()=>{
+//     console.log('rawat')
+// },1000);
+// clearTimeout(id)
+// console.log(id);
+
+// function myFunc(number1,number2,onSuccess,onfailiure){
+//  if(typeof number1==='number'&&typeof number2==='number'){
+//     onSuccess(number1,number2);
+//  }else{
+//     onfailiure();
+//  }
+    
+// }
+
+// myFunc(55,'4',((num1,num2)=>{
+// console.log(num1+num2);
+// }),(()=>{
+//     console.log('wrong data please')
+// }));
+
+// const heading1 = document.querySelector('.heading1');
+// const heading2 = document.querySelector('.heading2');
+// const heading3 = document.querySelector('.heading3');
+// const heading4 = document.querySelector('.heading4');
+// const heading5 = document.querySelector('.heading5');
+// const heading6 = document.querySelector('.heading6');
+// const heading7 = document.querySelector('.heading7');
+// setTimeout(()=>{
+//     heading1.textContent= 'heading1';
+//     heading1.style.color = 'violet';
+//     setTimeout(()=>{
+//         heading2.textContent= 'heading2';
+//         heading2.style.color = 'blue';
+//         setTimeout(()=>{
+//             heading3.textContent= 'heading3';
+//             heading3.style.color = 'yellow';
+//             setTimeout(()=>{
+//                 heading4.textContent= 'heading4';
+//                 heading4.style.color = 'green';
+//                 setTimeout(()=>{
+//                     heading5.textContent= 'heading5';
+//                     heading5.style.color = 'brown';
+//                     setTimeout(()=>{
+//                         heading6.textContent= 'heading6';
+//                         heading6.style.color = 'purple';
+//                         setTimeout(()=>{
+//                             heading7.textContent= 'heading7';
+//                             heading7.style.color = 'violet';
+//                         },1000)
+//                     },2000)
+//                 },1000)
+//             },3000)
+//         },1000)
+//     },2000)
+
+// },1000)
