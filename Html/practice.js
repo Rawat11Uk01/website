@@ -1489,3 +1489,226 @@
 //     },2000)
 
 // },1000)
+
+
+// const heading1 = document.querySelector('.heading1');
+// const heading2 = document.querySelector('.heading2');
+// const heading3 = document.querySelector('.heading3');
+// const heading4 = document.querySelector('.heading4');
+// const heading5 = document.querySelector('.heading5');
+// const heading6 = document.querySelector('.heading6');
+// const heading7 = document.querySelector('.heading7');
+
+// function changeText(element,text,color,time,onSuccessCallback,onfailiureCallback){
+//     setTimeout(()=>{
+//         if(element){
+//             element.textContent = text;
+//             element.style.color = color;
+//             if(onSuccessCallback){
+//                 onSuccessCallback();
+//             }
+           
+            
+//         }else{
+//             if(onfailiureCallback){
+//                 onfailiureCallback();
+//             }
+            
+//         }
+    
+//     },time)
+// };
+// changeText(heading1,'one','yellow',1000,()=>{
+//     changeText(heading2,'two','red',1000,()=>{
+//         changeText(heading3,'three','blue',1000,()=>{
+//             changeText(heading4,'four','green',1000,()=>{
+//                 changeText(heading5,'five','brown',1000,()=>{
+//                     changeText(heading6,'six','purple',1000,()=>{
+//                         changeText(heading7,'seven','yellow',1000,()=>{
+
+//                         },()=>{console.log("not found")})
+//                     },()=>{console.log("not found")
+//                     })
+//                 },()=>{console.log("not found")
+//                 })
+//             },()=>{console.log("not found")
+//             })
+//         },()=>{console.log("not found")
+//         })
+//     },()=>{console.log("not found")
+//     })
+// },()=>{console.log("not found")
+// })
+
+// const bucket = ['coffe', 'chips','vegetable','salt','rice'];
+// const friedriceproise= new Promise((resolve,reject)=>{
+//     if(bucket.includes('vegetable')&&bucket.includes('salt')&&bucket.includes('rice')){
+//         resolve('fried rice');
+//     }else{
+//         reject('not available');
+//     }
+// });
+
+// friedriceproise.then((a)=>{
+// console.log(a)
+// }).catch((error)=>{
+// const bucket = ['coffe', 'chips','vegetable','salt','rice'];
+// const friedriceproise= new Promise((resolve,reject)=>{
+//     if(bucket.includes('vegetable')&&bucket.includes('salt')&&bucket.includes('rice')){
+//         resolve('fried rice');
+//     }else{
+// const bucket = ['coffe', 'chips','vegetable','salt','rice'];
+// const friedriceproise= new Promise((resolve,reject)=>{
+//     if(bucket.includes('vegetable')&&bucket.includes('salt')&&bucket.includes('rice')){
+//         resolve('fried rice');
+//     }else{
+//         reject('not available');
+//     }
+// });
+// console.log(a)
+// }).catch((error)=>{
+// console.log(error)
+// })
+//         reject('not available');
+//     }
+// });
+
+// friedriceproise.then((a)=>{
+// console.log(a)
+// }).catch((error)=>{
+// console.log(error)
+// })
+// console.log(error)
+// })
+// friedriceproise.then((a)=>{},(b)=>{})
+
+// function ricePromice(){
+//     const bucket = ['coffe', 'chips','vegetable','salt','rice'];
+//     return new Promise((resolve,reject)=>{
+//         if(bucket.includes('vegetable')&&bucket.includes('salt')&&bucket.includes('rice')){
+//             resolve('fried rice');
+//         }else{
+//             reject('not available');
+//         }
+//     });
+// }
+
+// ricePromice().then((a)=>{
+//     console.log(a)
+//     }).catch((error)=>{
+//     console.log(error)
+//     })
+
+// function test(){
+//     return new Promise((resolve,reject)=>{
+//         const value = false;
+//         setTimeout(()=>{
+//          if(value){
+//              resolve();
+//          }else{
+//              reject();
+//          }
+//         },1000)
+//     })
+// }
+// test().then(()=>{
+//     console.log('yayyy')
+// }).catch(()=>{
+//     console.log('nooooo')
+// })
+// const promi = Promise.resolve(5);
+// promi.then((a)=>{
+//     a += 'bc';
+//     return a;
+// }).then((x)=>{
+// console.log(x)
+// })
+
+// const heading1 = document.querySelector('.heading1');
+// const heading2 = document.querySelector('.heading2');
+// const heading3 = document.querySelector('.heading3');
+// const heading4 = document.querySelector('.heading4');
+// const heading5 = document.querySelector('.heading5');
+// const heading6 = document.querySelector('.heading6');
+// const heading7 = document.querySelector('.heading7');
+
+
+// function changeText(element,text,color,time){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             if(element){
+//                 element.textContent = text;
+//                 element.style.color = color;
+//                 resolve();
+               
+//             }else{
+//                 reject();
+                
+//             }
+        
+//         },time)
+//     })
+    
+// };
+// changeText(heading1,'one','yellow',1000)
+// .then(()=>{
+//    return changeText(heading2,'two','blue',1000)
+// })
+// .then(()=>{
+//     changeText(heading3,'three','red',1000)
+// })
+// .catch((error)=>{
+// console.log('ja na')
+// })
+
+// const url = "https://jsonplaceholder.typicode.com/posts";
+// const xhr = new XMLHttpRequest();
+
+// xhr.open('GET',url);
+// xhr.onreadystatechange = function(){
+//     if(xhr.readyState===4){
+//         const response = xhr.response;
+//         const data = JSON.parse(response);
+//         const id = data[3].id;
+
+
+//         const url2 = `${url}/${id}`
+//        const xhr2 = new XMLHttpRequest();
+//         xhr2.open('GET',url2);
+//            xhr2.onload = function(){
+//             const data2 = JSON.parse(xhr2.response);
+//             console.log(data2)
+//            }
+//         xhr2.send();
+    
+
+//     }
+// }
+
+// xhr.send();
+
+// const url = "https://jsonplaceholder.typicode.com/posts";
+// const sendRequest = function(GET,url){
+//     return new Promise((resolve,reject)=>{
+//         const xhr = new XMLHttpRequest();
+//         xhr.open('GET',url);
+//         xhr.onreadystatechange = function(){
+//             if(xhr.readyState===4){
+//                 const response = xhr.response;
+//                 const data = JSON.parse(response);
+//                 resolve(data);
+//             }else{
+//                 reject(new Error('something went wrong'));
+//             }
+//         } 
+//         xhr.send();
+
+
+//     })
+// }
+// sendRequest('GET',url)
+// .then((data)=>{
+// console.log(data);
+// })
+const url = "https://jsonplaceholder.typicode.com/posts";
+fetch(url)
